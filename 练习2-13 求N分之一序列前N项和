@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(void){
+	int n,i;
+		double sum = 0;          //数据类型的问题主要是
+	printf("input n:");        
+	scanf("%d",&n);
+	for(i  = 1;i<=n;i++){
+		sum = sum + 1.0/i;
+	}
+	printf("%.6f",sum);
+	}
