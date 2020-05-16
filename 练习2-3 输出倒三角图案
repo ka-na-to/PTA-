@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(void){
+	int i,j,k;
+	for(i = 4;i > 0;i--){
+		k = i;
+		for(j = i;4 -j >0;j++){    //  这个由自己调整
+			printf(" ");                   
+		}
+		while(k > 0){
+			printf("*");k--;}    //用while才能输出对应的几个*号，不然只能输出一个
+		printf("\n");
+	}
+
+}
