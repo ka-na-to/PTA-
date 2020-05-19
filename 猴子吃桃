@@ -1,0 +1,10 @@
+#include<stdio.h>                //  用倒推法，  使用的是while循坏
+int main(void){
+	int day  = 9 ,x1,x2 = 1;
+	while(day>0){
+		x1 = (x2+1)*2;                        //   x1,x2的轮流赋值使用的很好
+	    x2 = x1;
+		day--;
+	}
+	printf("%d",x1);
+}
