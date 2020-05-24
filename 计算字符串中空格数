@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+int main(void){
+	int i,j = 0;
+	char str1[100];
+	gets(str1);
+	for(i = 0;i < 100;i++){   //用for进行遍历
+		if(str1[i] == ' ')          // 空格也是字符，  用 j进行计数
+			j++;
+	}
+	printf("%d",j);	
+}
