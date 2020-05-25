@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+	int grade[5];
+	int i,j,k;
+	for(i = 0;i<5;i++){
+		scanf("%d",&grade[i]);
+	}
+	for(i = 0;i<4;i++){
+		for(j = 0;j<4-i;j++){
+			if(grade[j]<grade[j+1]){        //将这里改成<即可
+				k = grade[j];
+				grade[j] = grade[j+1];
+				 grade[j+1] = k;
+			}
+		}
+	}
+	for(i = 0;i<5;i++){
+		printf("%d",grade[i]);
+	}
+return 0;
+}
